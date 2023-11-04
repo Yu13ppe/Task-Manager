@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 2 - JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1> &#128203 Registro de Actividades por Jose Portillo</h1>
+  <div class="d-flex">
+    <div id="form-container">
+      <form id="activity-form">
+        <label for="title">&#9989 Título de la actividad:</label>
+        <input type="text" id="title" required>
+        <br>
+        <label for="description">&#9989 Descripción:</label>
+        <input type="text" id="description" required>
+        <br>
+        <label for="start-date">&#128197 Fecha de inicio:</label>
+        <input type="date" id="start-date" required>
+        <br>
+        <label for="end-date">&#128197 Fecha final:</label>
+        <input type="date" id="end-date" required>
+        <br>
+        <label for="responsible">&#128100 Responsable:</label>
+        <input type="text" id="responsible" required>
+        <br>
+        <button type="submit" id="add-button" value="Agregar">Agregar 
+          <span>&#10133</span>
+        </button>
+      </form>
+    </div>
+  
+    <div id="activities-container">
+      <h2>Actividades</h2>
+      <ul id="activities-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
